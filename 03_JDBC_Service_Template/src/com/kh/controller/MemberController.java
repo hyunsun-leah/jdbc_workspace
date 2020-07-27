@@ -12,7 +12,7 @@ public class MemberController {
 		
 		int result = new MemberService().insertMember(m);
 		
-		if(result > 0) { // 성공
+		if(result > 0) { // 성공!!
 			new MemberMenu().displaySuccess("성공적으로 회원가입 되었습니다.");
 		}else { // 실패
 			new MemberMenu().displayFail("회원가입에 실패했습니다.");
